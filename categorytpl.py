@@ -41,3 +41,4 @@ def category_template(generator, content):
 
 def register():
     signals.article_generator_write_article.connect(category_template)
+    signals.page_generator_write_page.connect(category_template)
